@@ -19,6 +19,7 @@ body {
     font-size: 1.6rem;
 }
 
+
 #header {
     border-bottom: 1px solid #ddd;
 }
@@ -33,7 +34,7 @@ body {
 }
 
 #header .hd_wrap .inner h1 img {
-    height: 6rem;
+    height: 5rem;
 }
 
 #header .hd_wrap .inner .gnb>ul {
