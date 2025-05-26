@@ -1,0 +1,187 @@
+:root {
+    --primary-color: ##000000;
+    /*root는 저 위에 있다는 뜻, --primary-color 중요한컬러*/
+    --secondary-color: #ef441f;
+
+    --body-color: #333333;
+
+    --line-color: #dddddd;
+    --white-color: #ffffff;
+    /*white-color 많이 쓰는 컬러*/
+    --backgroud-color: #f7f7f7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .hd_wrap .inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 12rem;
+}
+
+#header .hd_wrap .inner h1 img {
+    height: 6rem;
+}
+
+#header .hd_wrap .inner .gnb>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+#header .hd_wrap .inner .gnb>ul>li>a {
+    display: block;
+    line-height: 12rem;
+    font-size: 1.9rem;
+}
+
+#header .hd_wrap .utils {
+    display: flex;
+    gap: 8px;
+}
+
+.mbtn {
+    display: none;
+}
+
+@media (max-width:1442px) {
+    #header .inner {
+        margin: 0 1.6rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    #header .hd_wrap .inner .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+
+        background: #fff;
+        border-right: 1px solid #ddd;
+
+        height: 200vh;
+        width: calc(100% - 120px);
+
+        padding: 12rem 2.4rem 0 2.4rem;
+    }
+
+    #header .hd_wrap .inner .gnb.on {
+        /* 반응형 */
+        left: 0;
+    }
+
+    #header .hamburger {
+        display: block;
+        position: absolute;
+        top: 3.2rem;
+        right: 1.6rem;
+        padding: 1.6rem 0;
+
+    }
+
+    #header .hamburger-inner,
+    #header .hamburger-inner::before,
+    #header .hamburger-inner::after {
+        content: "";
+        width: 3.2rem;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+    }
+
+
+
+    #header .hd_wrap .inner .gnb>ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    #header .hd_wrap .inner .gnb>ul>li {
+        position: relative;
+    }
+
+    #header .hd_wrap .inner .gnb>ul>li>a {
+        line-height: 4rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #header .hd_wrap .utils {
+        display: none;
+    }
+
+}
+
+.main_visual {
+    position: relative;
+    height: 64rem;
+    background: url(../images/main_visual01.jpg) no-repeat center top/cover;
+}
+
+.main_visual .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 141rem;
+    width: 100%;
+}
+
+.main_visual .slg .txt strong {
+    display: block;
+    margin-bottom: 2.4rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.main_visual .slg .txt p {
+    display: block;
+    line-height: 2.4rem;
+    font-size: 1.7rem;
+}
+
+.main_visual .slg .txt p span {
+    box-shadow: inset 0 1.2em 0 rgba(255, 255, 0, 0.45);
+}
+
+.main_lnk {}
+
+.main_lnk .inner {
+    display: flex;
+    align-items: flex-end;
+    height: 24rem;
+
+    position: relative;
+    margin-top: -12rem;
+}
+
+.main_lnk .inner .itm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    flex: 1;
+    height: 20rem;
+}
+
+.main_lnk .inner .itm i img {
+    width: 120px;
+    height: 120px;
+
+}

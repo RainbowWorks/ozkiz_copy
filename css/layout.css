@@ -1,0 +1,21 @@
+.inner {
+    max-width: 141rem;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 8rem 0;
+}
+
+
+.flx {
+    display: flex;
+}
+
+.flx>* {
+    flex: 1;
+}
+
+.flx img {
+    width: 100%;
+}
