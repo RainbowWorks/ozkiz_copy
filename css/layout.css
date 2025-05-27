@@ -3,10 +3,55 @@
     margin: 0 auto;
 }
 
+@media (max-width:1442px) {
+    .inner {
+        margin: 0 1.6rem;
+    }
+}
+
 .default {
+    text-align: center;
     padding: 8rem 0;
 }
 
+.default img {}
+
+.default h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.default p {
+    display: block;
+    margin-bottom: 6.4rem;
+}
+
+.default .itm strong {
+    display: block;
+    /*박스가 아니니까 디스플레이 블럭으로 박스를 만들어준다.*/
+    text-align: center;
+    margin-top: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.default .itm img {
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+.default .itm p {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.default .itm em {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
 
 .flx {
     display: flex;
@@ -18,4 +63,73 @@
 
 .flx img {
     width: 100%;
+}
+
+@media (max-width:1442px) {
+    .default {
+        padding: 12rem 0;
+    }
+
+    .default img {}
+
+    .default h2 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 1.6rem;
+    }
+
+    .default p {
+        display: block;
+        margin-bottom: 6.4rem;
+    }
+
+    .default .itm strong {
+        display: block;
+        /*박스가 아니니까 디스플레이 블럭으로 박스를 만들어준다.*/
+        text-align: center;
+        margin-top: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .default .itm img {
+        border-radius: 2.4rem;
+        overflow: hidden;
+    }
+
+    .default .itm p {
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 3.2rem;
+    }
+
+    .default .itm em {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .rflx {
+        /* 반응형에 쓸거여서 rflx로 적었다. */
+        display: flex;
+        gap: 4rem 3rem;
+    }
+
+    .rflx>* {
+        flex: 1;
+    }
+}
+
+@media (max-width:540px) {
+    .rflx {
+        display: flex;
+        gap: 4rem 3rem;
+
+        /*  */
+        flex-direction: column;
+    }
+
+    .rflx>* {
+        flex: 1;
+    }
 }
