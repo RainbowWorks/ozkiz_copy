@@ -120,7 +120,7 @@
     }
 }
 
-@media (max-width:540px) {
+@media (max-width:768px) {
     .rflx {
         display: flex;
         gap: 4rem 3rem;
