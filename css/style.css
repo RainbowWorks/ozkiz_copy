@@ -9,6 +9,8 @@
     --white-color: #ffffff;
     /*white-color 많이 쓰는 컬러*/
     --backgroud-color: #f9f9f9;
+
+    --sub-color: #e6101b;
 }
 
 html {
@@ -206,7 +208,6 @@ body {
     .main_lnk .inner {
         /*  */
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         height: auto;
         margin-top: 1rem;
@@ -293,6 +294,39 @@ body {
 .main_basic .inner p {
     margin-bottom: 6px;
 }
+
+.main_basic .btn_wrap {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .main_basic .inner {
+        /*  */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .main_basic .inner .itm {
+        flex: 1;
+    }
+
+    .main_basic .inner img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main_basic .inner p {
+        margin-bottom: 6px;
+    }
+}
+
+
+
 
 .oz_video {
     background: #f3f3f3;
@@ -411,4 +445,58 @@ body {
         /*  */
         display: none;
     }
+}
+
+
+
+
+#sub01 .inner .title p {
+    opacity: 0.75;
+}
+
+
+#sub01 .inner .tit_box {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    height: 12rem;
+
+}
+
+
+#sub01 .inner .tit_box .txt {
+    height: 100%;
+    /* 부모 높이 꽉 채우기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 세로 가운데 */
+    text-align: left;
+}
+
+#sub01 .inner .tit_box .txt .tit {
+    line-height: 2.4rem;
+    font-weight: 600;
+}
+
+#sub01 .inner .tit_box .txt p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+    margin-top: 8px;
+}
+
+#sub01 img {
+    margin-bottom: 6.4rem;
+    margin-top: 6.4rem;
+}
+
+#sub01 .content_box strong {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+}
+
+#sub01 .content_box span {
+    color: var(--sub-color);
 }

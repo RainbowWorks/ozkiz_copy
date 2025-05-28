@@ -53,6 +53,23 @@
     line-height: 1.6rem;
 }
 
+
+.default_btn {
+    /*디폴트 버튼을 만들어놓고 계속 사용할거다.*/
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2.4rem;
+    /*top 0 right 24 bottom 0 left 24*/
+    height: 4rem;
+    background: #f4f4f6;
+
+    border-radius: 8px;
+    /*모서리 둥글게*/
+    white-space: nowrap;
+    /*글자 한줄로*/
+    margin-top: 4rem;
+}
+
 .flx {
     display: flex;
 }
