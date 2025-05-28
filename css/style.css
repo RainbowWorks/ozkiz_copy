@@ -168,6 +168,14 @@ body {
     .main_visual {
         background: url(../images/main_visual01.jpg) no-repeat 60% top/cover;
     }
+
+    .main_visual .slg .txt strong {
+        font-size: 5vw;
+    }
+
+    .main_visual .slg .txt p {
+        font-size: 2vw;
+    }
 }
 
 
