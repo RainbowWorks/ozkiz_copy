@@ -164,6 +164,14 @@ body {
     box-shadow: inset 0 1.2em 0 rgba(255, 255, 0, 0.45);
 }
 
+@media (max-width: 768px) {
+    .main_visual {
+        background: url(../images/main_visual01.jpg) no-repeat 60% top/cover;
+    }
+}
+
+
+
 .main_lnk {
     margin-bottom: 1.6rem;
 }
