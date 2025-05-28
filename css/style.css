@@ -355,6 +355,23 @@ body {
     font-size: 1.2rem;
 }
 
-* {
-    outline: 1px solid tomato;
+@media (max-width: 768px) {
+    #footer p {
+        /*  */
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    #footer p span~span::before {
+        /*  */
+        display: none;
+    }
+
+
+    #footer address {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.2rem;
+    }
 }
