@@ -375,22 +375,40 @@ body {
 }
 
 @media (max-width: 768px) {
+
+
+    #footer .customer {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 2.4rem;
+        font-size: 14px;
+    }
+
+    #footer .customer li {
+        position: relative;
+    }
+
+    #footer .customer li~li::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -8px;
+        transform: translate(0, -50%);
+        width: 1px;
+        height: 0.5em;
+        background: #333;
+    }
+
     #footer p {
         /*  */
         flex-direction: column;
         gap: 8px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #footer p span~span::before {
         /*  */
         display: none;
-    }
-
-
-    #footer address {
-        text-align: center;
-        margin-top: 4rem;
-        font-size: 1.2rem;
     }
 }
