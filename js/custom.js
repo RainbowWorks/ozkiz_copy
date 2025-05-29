@@ -1,3 +1,5 @@
+
+
 $(function () {
     $('.mbtn').on('click', function () {
         $(this).toggleClass('is-active')
@@ -12,6 +14,11 @@ $(function () {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 30,
+        autoplay: {
+            delay: 2400,
+            disableOnInteraction: false,
+        },
+        speed: 800,
         pagination: {
             el: '.main_new_slide .page',
             clickable: true,
