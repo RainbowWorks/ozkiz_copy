@@ -175,20 +175,34 @@ body {
 
     .main_visual .slg {
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 141rem;
         width: 100%;
-        margin: 0 1.6rem;
+
+        /* r */
+        top: 70%;
+        padding-left: 1.6rem;
     }
 
     .main_visual .slg .txt strong {
+        display: block;
+        margin-bottom: 2.4rem;
+        font-size: 4rem;
+        font-weight: 700;
+
+        /* r */
         font-size: 6vw;
         margin-bottom: 8px;
     }
 
     .main_visual .slg .txt p {
+        display: block;
+        line-height: 2.4rem;
+        font-size: 1.7rem;
+
+        /* r */
         font-size: 3vw;
     }
 }
